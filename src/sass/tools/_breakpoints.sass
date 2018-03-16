@@ -1,0 +1,37 @@
+// ====================================================================
+// Breakpoints
+// ====================================================================
+
+=extra-small
+  +breakpoint($mobile)
+    @content
+
+=mobile
+  +breakpoint-above($mobile)
+    @content
+
+=tablet
+  +breakpoint-above($tablet)
+    @content
+
+=desktop
+  +breakpoint-above($desktop)
+    @content
+
+=extra-large
+  +breakpoint-above($extra-large)
+    @content
+
+=breakpoint-above($size)
+  @media screen and (min-width: $size)
+    @content
+
+=breakpoint($size)
+  @media screen and (max-width: $size)
+    @content
+
+// Grid colums mixin
+=grid-colms($class)
+  @for $i from 1 through 12
+    .col.#{$class + $i}
+      width: $width / (12 / $i)
