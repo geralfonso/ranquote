@@ -77,7 +77,6 @@ gulp.task('compress', (cb) => {
   pump([
       gulp.src(['./src/js/*.js']),
       concat('bundle.js'),
-      uglify(),
       gulp.dest('./docs/js')
     ],
     cb

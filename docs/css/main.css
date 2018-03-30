@@ -712,6 +712,7 @@ p {
   font-size: 5em;
   line-height: 1;
   color: rgba(255, 0, 0, 0.5);
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 576px) {
@@ -737,7 +738,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   min-width: 122px;
-  height: 35px;
+  height: 40px;
   padding: 0 2em;
   background-color: #ffffff;
   border: 0;
@@ -763,6 +764,87 @@ p {
 
 .btn:active {
   background-color: #eeeeee;
+}
+
+.social_btn {
+  line-height: 40px;
+  width: 40px;
+  margin: 0 20px;
+  text-align: center;
+  display: inline-block;
+  color: inherit;
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.social_btn:first-child {
+  margin-left: 0;
+}
+
+.social_btn:last-child {
+  margin-right: 0;
+}
+
+.social_btn:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+  .social {
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 40px;
+    color: inherit;
+  }
+  .social:hover .social_tittle, .social.hover .social_tittle {
+    opacity: 0;
+  }
+  .social:hover .social_btn, .social.hover .social_btn {
+    border-radius: 50%;
+    margin: 0 20px;
+    color: inherit;
+  }
+  .social_tittle {
+    width: 100%;
+    line-height: 40px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: -50%;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .social_buttons {
+    font-size: 0;
+  }
+  .social_btn {
+    color: #ffffff;
+    margin: 0 -1px;
+  }
+  .social_btn:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    margin-left: 0;
+  }
+  .social_btn:last-child {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    margin-right: 0;
+  }
 }
 
 .center_el--abs {
@@ -797,6 +879,18 @@ p {
 
 .text-red {
   color: #FF0000;
+}
+
+.text-green {
+  color: #78EC00;
+}
+
+.facebook--hover:hover {
+  background-color: #3B5998;
+}
+
+.twitter--hover:hover {
+  background-color: #61c5ec;
 }
 
 body {

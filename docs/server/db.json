@@ -1,33 +1,51 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "In hybrid moments, give me a moment",
-      "lastReply": "1997-07-15"
-    },
-    {
-      "id": 2,
-      "title": "Sound system gonna bring me back up",
-      "lastReply": "1991-07-01"
-    },
-    {
-      "id": 3,
-      "title": "When I'm out walkin', I strut my stuff",
-      "lastReply": "1983-04-19"
-    }
-  ],
-  "activeUsers": [
-    {
-      "name": "Sam",
-      "avatar": "avatar.jpg"
-    },
-    {
-      "name": "Tyler",
-      "avatar": "avatar.jpg"
-    },
-    {
-      "name": "Brook",
-      "avatar": "avatar.jpg"
-    }
-  ]
+	"quotes": [{
+			"id": 1,
+			"cite": "First off, be calm. I see your mind is clouded. You are far too young to be worried about failure. When your back's up against the wall, you must take action. Overthinking won't change it. The best course is to muddle through.",
+			"author": "Silver Fang",
+			"image": "https://media.giphy.com/media/lXqIT00H4LayQ/source.gif"
+		},
+		{
+			"id": 2,
+			"cite": "Design is not just what it looks like and feels like. Design is how it works.",
+			"author": "Steve Jobs",
+			"image": "https://media.giphy.com/media/TfelnmQ8VU3K/giphy.gif"
+		},
+		{
+			"id": 3,
+			"cite": "It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.",
+			"author": "Sherlock Holmes",
+			"image": "https://media.giphy.com/media/jX3xAiGSyjqX6/giphy.gif"
+		},
+		{
+			"id": 4,
+			"cite": "The problem is not the problem. The problem is your attitude about the problem.",
+			"author": "Jack Sparrow",
+			"image": "http://31.media.tumblr.com/9ff6ff1e5a346d6ace4b57cd18c9a3c4/tumblr_mx4oqr6t3X1smcbm7o1_500.gif"
+		},
+		{
+			"id": 5,
+			"cite": "Data, data, data. I can not make bricks without clay.",
+			"author": "Sherlock Holmes",
+			"image": "https://media.giphy.com/media/sfFngatk0BJQs/giphy.gif"
+		},
+		{
+			"id": 6,
+			"cite": "If you only do what you can do, you’ll never be better than what you are.",
+			"author": "Master Shifu",
+			"image": "https://static.tumblr.com/c055bc68805f88771faf825b901e9bcc/seqytwg/ZQlo518fd/tumblr_static_tumblr_static_84fj82v2e50cgsgs4cwog80ws_640.gif"
+		},
+		{
+			"id": 7,
+			"cite": "Yesterday is history, tomorrow is a mystery, and today is a gift… that’s why they call it the present.",
+			"author": "Master Oogway",
+			"image": "https://media1.giphy.com/media/5Ivz8uxHriaAw/giphy.gif"
+		},
+		{
+			"id": 8,
+			"cite": "Your mind is like this water, my friend. When it gets agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clear.",
+			"author": "Master Oogway",
+			"image": "https://j.gifs.com/XDkX3W.gif"
+		}
+	]
 }
