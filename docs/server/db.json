@@ -55,8 +55,7 @@
 		},
 		{
 			"id": 10,
-			"cite": "I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.
-Read more at: https://www.brainyquote.com/authors/elon_musk.",
+			"cite": "I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.",
 			"author": "Elon Musk",
 			"image": "https://media.giphy.com/media/TinfE4kgluZYA/source.gif"
 		},
@@ -77,6 +76,18 @@ Read more at: https://www.brainyquote.com/authors/elon_musk.",
 			"cite": "I will not let anyone walk through my mind with their dirty feet.",
 			"author": "Mahatma Gandhi",
 			"image": "https://media.giphy.com/media/V5uZa7XutqRUs/giphy.gif"
+		},
+		{
+			"id": 14,
+			"cite": "If you forsake your will while hitting a wall… you will begin to make excuses and obtain hatred in exchange of your determination. Listen now… you have to step forward without abandoning your will!.",
+			"author": "Ishikawa - First Tsuchikage",
+			"image": "https://pm1.narvii.com/5601/e1cfbbacef09847008fadf8f8616983e7fb441f5_hq.jpg"
+		},
+		{
+			"id": 15,
+			"cite": "Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.",
+			"author": "Dr. Seuss",
+			"image": "https://redtricom.files.wordpress.com/2017/04/dr-seuss.jpg"
 		}
 	]
 }
