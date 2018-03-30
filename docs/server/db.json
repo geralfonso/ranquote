@@ -46,6 +46,37 @@
 			"cite": "Your mind is like this water, my friend. When it gets agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clear.",
 			"author": "Master Oogway",
 			"image": "https://j.gifs.com/XDkX3W.gif"
+		},
+		{
+			"id": 9,
+			"cite": "When something is important enough, you do it even if the odds are not in your favor.",
+			"author": "Elon Musk",
+			"image": "https://i.imgur.com/PtV0buA.gif"
+		},
+		{
+			"id": 10,
+			"cite": "I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.
+Read more at: https://www.brainyquote.com/authors/elon_musk.",
+			"author": "Elon Musk",
+			"image": "https://media.giphy.com/media/TinfE4kgluZYA/source.gif"
+		},
+		{
+			"id": 11,
+			"cite": "If you're walking down the right path and you're willing to keep walking, eventually you'll make progress.",
+			"author": "Barack Obama",
+			"image": "https://media.giphy.com/media/2gxvLAo2N5CYU/giphy.gif"
+		},
+		{
+			"id": 12,
+			"cite": "The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on.",
+			"author": "Barack Obama",
+			"image": "https://media.giphy.com/media/HqhbTFSiL41H2/giphy.gif"
+		},
+		{
+			"id": 13,
+			"cite": "I will not let anyone walk through my mind with their dirty feet.",
+			"author": "Mahatma Gandhi",
+			"image": "https://media.giphy.com/media/V5uZa7XutqRUs/giphy.gif"
 		}
 	]
 }
