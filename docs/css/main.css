@@ -689,7 +689,6 @@ p {
 
 .quote_cite {
   padding: 1em;
-  background-color: #FF0000;
 }
 
 .title--vertical {
@@ -891,10 +890,6 @@ p {
 
 .twitter--hover:hover {
   background-color: #61c5ec;
-}
-
-body {
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */

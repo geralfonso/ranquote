@@ -9,6 +9,8 @@ $(document).ready(function () {
 
   function change(quote) {
     var current = Math.floor(Math.random() * (quote.length));
+    console.log(current);
+
     cite.find('cite').text(quote[current].cite);
     img.attr({
       'src': quote[current].image,
