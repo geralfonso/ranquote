@@ -7,7 +7,6 @@ $(document).ready(function () {
     btnColor = $('.social_tittle, .quote_btn, .social_buttons'),
     body = $('body');
 
-  $.preloadImages("images/nav/1.jpg", "images/nav/2.jpg")
 
   function change(quote) {
     var current = Math.floor(Math.random() * (quote.length));
@@ -32,45 +31,6 @@ $(document).ready(function () {
       });
     }
   });
-
-
-  /*
-    $.getJSON("https://geralfonso.github.io/ranquote/server/db.json", function (json) {
-      console.log(json);
-      var curQuote = json.quotes;
-      var current = Math.floor(Math.random() * curQuote.length);
-      cite.find('cite').text(curQuote[current].cite);
-      img.attr({
-        'src': curQuote[current].image,
-        'alt': curQuote[current].author
-      });
-      author.text(curQuote[current].author);
-      body.css('background-color', 'rgba(' + colors[current] + ',0.3)');
-      cite.css('background-color', 'rgb(' + colors[current] + ')');
-      $('.title_heading').css('color', 'rgb(' + colors[current] + ')');
-
-      $('.social_tittle, .quote_btn, .social_buttons').css('color', 'rgb(' + colors[current] + ')');
-
-      $('.quote_btn').on('click', function (el) {
-        el.preventDefault();
-        current = Math.floor(Math.random() * (curQuote.length));
-        console.log("Frase actual: " + current + " y total de frases: " + curQuote.length);
-        cite.find('cite').text(curQuote[current].cite);
-        img.attr({
-          'src': curQuote[current].image,
-          'alt': curQuote[current].author
-        });
-        author.text(curQuote[current].author);
-        body.css('background-color', 'rgba(' + colors[current] + ',0.3)');
-        cite.css('background-color', 'rgb(' + colors[current] + ')');
-        $('.title_heading').css('color', 'rgb(' + colors[current] + ')');
-
-        $('.social_tittle, .quote_btn, .social_buttons').css('color', 'rgb(' + colors[current] + ')');
-
-      });
-    });
-  */
-
 });
 
 // Force a hover to see the effect
