@@ -1,10 +1,10 @@
-// Force a hover to see the effect
-var social = document.getElementsByClassName('social')[0];
+$(document).ready(function () {
+  var curTitle = $('.quote_autor').text(),
+    curDescription = $('.quote_cite').find('cite').text(),
+    curImage = $('.quote_img').find('img').attr('src');
+  $('.social_buttons').on('click', '.facebook--hover', function (el) {
+    el.preventDefault();
 
-setTimeout(function () {
-  social.classList.add("hover");
-}, 1000);
-
-setTimeout(function () {
-  social.classList.remove("hover");
-}, 3000);
+    shareOverrideOGMeta(curTitle, curDescription, curImage);
+  });
+});

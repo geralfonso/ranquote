@@ -138,6 +138,13 @@
 			"author": "Leonardo da Vinci",
 			"image": "https://media.giphy.com/media/Xp98kEiD0SF9PEVPRl/giphy.gif",
 			"color": "0,128,128"
+		},
+		{
+			"id": 21,
+			"cite": "Power is not will, it is the phenomenon of physically making things happen.",
+			"author": "Madara Uchiha",
+			"image": "https://media.giphy.com/media/fBM0Os0cC66QAgVtmo/giphy.gif",
+			"color": "0,206,209"
 		}
 	]
 }

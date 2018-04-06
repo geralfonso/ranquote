@@ -26,18 +26,52 @@
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./css/main.css" media="screen,projection">
+    <script></script>
   </head>
   <body>
     <!--==== Facebook Share Button ====-->
     <div id="fb-root"></div>
     <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=953860781430707&autoLogAppEvents=1';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '953860781430707',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.12'
+        });
+        FB.AppEvents.logPageView();
+      };
+      
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/es_LA/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+       function shareOverrideOGMeta(overrideTitle, overrideDescription, overrideImage) {
+        FB.ui({
+          method: 'share_open_graph',
+          action_type: 'og.shares',
+          action_properties: JSON.stringify({
+            object: {
+              'og:title': 'Random Quote Machine' + overrideTitle,
+              'og:description': overrideDescription,
+              'og:image': overrideImage
+            },
+          })
+        }, function (response) {
+          // Debug response (optional)
+          console.log(response);
+        });
+      }
+      //- (function(d, s, id) {
+      //-   var js, fjs = d.getElementsByTagName(s)[0];
+      //-   if (d.getElementById(id)) return;
+      //-   js = d.createElement(s); js.id = id;
+      //-   js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=953860781430707&autoLogAppEvents=1';
+      //-   fjs.parentNode.insertBefore(js, fjs);
+      //- }(document, 'script', 'facebook-jssdk'));
     </script>
     <!--==== / End Facebook Share Button ====-->
     <div class="container height_vp--max center_el--abs">   
@@ -46,12 +80,12 @@
       </div>
       <div class="row quote">
         <div class="col s12 m7 l7 xl7 quote_img"><img src="" alt=""></div>
-        <div class="col s12 m5 l5 xl5 quote_cite"><i class="fas fa-quote-left"></i>
+        <div class="col s12 m5 l5 xl5 quote_cite">   <i class="fas fa-quote-left"></i>
           <cite>     </cite>
           <p class="quote_autor"></p>
           <button class="btn quote_btn" type="submit">Next</button>
           <div class="quote_share social"><span class="social_tittle">Share</span>
-            <div class="social_buttons"><a class="social_btn facebook--hover fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgeralfonso.github.io%2Franquote%2F&amp;amp;src=sdkpreparse"><i class="fab fa-facebook-f"></i></a><a class="social_btn twitter--hover" href="http://twitter.com/share?text=This+is+google+a+search+engine&amp;url=https%3A%2F%2Fwww.google.com"><i class="fab fa-twitter"></i></a></div>
+            <div class="social_buttons"><a class="social_btn facebook--hover fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgeralfonso.github.io%2Franquote%2F&amp;amp;src=sdkpreparse"><i class="fab fa-facebook-f"></i></a><a class="social_btn twitter--hover" target="_blank"><i class="fab fa-twitter"></i></a></div>
           </div>
         </div>
       </div>
