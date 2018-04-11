@@ -1,0 +1,45 @@
+// ====================================================================
+// Grid
+// ====================================================================
+
+.container
+  margin: 0 auto
+  width: 90%
+  max-width: 1500px
+
+  +desktop
+    width: 80%
+
+
+  +extra-large
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+  .col
+    min-height: 1px
+
+  &::after
+    content: ""
+    display: table
+    clear: both
+
++extra-small
+  +grid-colms(xs)
+
+
++mobile
+  +grid-colms(s)
+
+
++tablet
+  +grid-colms(m)
+
+
++desktop
+  +grid-colms(l)
+
+
++extra-large
+  +grid-colms(xl)

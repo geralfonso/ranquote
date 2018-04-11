@@ -1,0 +1,150 @@
+{
+	"quotes": [{
+			"id": 1,
+			"cite": "First off, be calm. I see your mind is clouded. You are far too young to be worried about failure. When your back's up against the wall, you must take action. Overthinking won't change this. The best course is to muddle through.",
+			"author": "Silver Fang",
+			"image": "https://media.giphy.com/media/lXqIT00H4LayQ/source.gif",
+			"color": "22,160,133"
+		},
+		{
+			"id": 2,
+			"cite": "Design is not just what it looks like and feels like. Design is how it works.",
+			"author": "Steve Jobs",
+			"image": "https://media.giphy.com/media/TfelnmQ8VU3K/giphy.gif",
+			"color": "39,174,96"
+		},
+		{
+			"id": 3,
+			"cite": "It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.",
+			"author": "Sherlock Holmes",
+			"image": "https://media.giphy.com/media/jX3xAiGSyjqX6/giphy.gif",
+			"color": "44,62,80"
+		},
+		{
+			"id": 4,
+			"cite": "The problem is not the problem. The problem is your attitude about the problem.",
+			"author": "Jack Sparrow",
+			"image": "https://media.giphy.com/media/1rPYFFP9k5kNh8ORiV/giphy.gif",
+			"color": "243,156,18"
+		},
+		{
+			"id": 5,
+			"cite": "Data, data, data. I can not make bricks without clay.",
+			"author": "Sherlock Holmes",
+			"image": "https://media.giphy.com/media/sfFngatk0BJQs/giphy.gif",
+			"color": "231,76,60"
+		},
+		{
+			"id": 6,
+			"cite": "If you only do what you can do, you’ll never be better than what you are.",
+			"author": "Master Shifu",
+			"image": "https://media.giphy.com/media/u49RO4YGEETBx1Pulr/giphy.gif",
+			"color": "155,89,182"
+		},
+		{
+			"id": 7,
+			"cite": "Yesterday is history, tomorrow is a mystery, and today is a gift… that’s why they call it the present.",
+			"author": "Master Oogway",
+			"image": "https://media.giphy.com/media/5Ivz8uxHriaAw/giphy.gif",
+			"color": "251,105,100"
+		},
+		{
+			"id": 8,
+			"cite": "Your mind is like this water, my friend. When it gets agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clear.",
+			"author": "Master Oogway",
+			"image": "https://media.giphy.com/media/uTC0EcIQtkdEnNxUI7/giphy.gif",
+			"color": "52,34,36"
+		},
+		{
+			"id": 9,
+			"cite": "When something is important enough, you do it even if the odds are not in your favor.",
+			"author": "Elon Musk",
+			"image": "https://media.giphy.com/media/ENFBBy8kUJpoQ/giphy.gif",
+			"color": "71,46,50"
+		},
+		{
+			"id": 10,
+			"cite": "I think it's very important to have a feedback loop, where you're constantly thinking about what you've done and how you could be doing it better. I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.",
+			"author": "Elon Musk",
+			"image": "https://media.giphy.com/media/1rKFRbiyJbZ82THfI4/giphy.gif",
+			"color": "189,187,153"
+		},
+		{
+			"id": 11,
+			"cite": "If you're walking down the right path and you're willing to keep walking, eventually you'll make progress.",
+			"author": "Barack Obama",
+			"image": "https://media.giphy.com/media/2gxvLAo2N5CYU/giphy.gif",
+			"color": "119,177,169"
+		},
+		{
+			"id": 12,
+			"cite": "The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on.",
+			"author": "Barack Obama",
+			"image": "https://media.giphy.com/media/HqhbTFSiL41H2/giphy.gif",
+			"color": "115,168,87"
+		},
+		{
+			"id": 13,
+			"cite": "I will not let anyone walk through my mind with their dirty feet.",
+			"author": "Mahatma Gandhi",
+			"image": "https://media.giphy.com/media/V5uZa7XutqRUs/giphy.gif",
+			"color": "0,51,102"
+		},
+		{
+			"id": 14,
+			"cite": "If you forsake your will while hitting a wall… you will begin to make excuses and obtain hatred in exchange of your determination. Listen now… you have to step forward without abandoning your will!.",
+			"author": "Ishikawa",
+			"image": "https://media.giphy.com/media/BNawJEWEUmFuxpUbDX/giphy.gif",
+			"color": "128,0,0"
+		},
+		{
+			"id": 15,
+			"cite": "Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.",
+			"author": "Dr. Seuss",
+			"image": "https://media.giphy.com/media/1yMfPGVAKlSRHJfk0R/giphy.gif",
+			"color": "0,206,209"
+		},
+		{
+			"id": 16,
+			"cite": "Give me six hours to chop down a tree and I will spend the first four sharpening the axe.",
+			"author": "Abraham Lincoln",
+			"image": "https://media.giphy.com/media/LYtaUJQVfI9os/giphy.gif",
+			"color": "49,105,138"
+		},
+		{
+			"id": 17,
+			"cite": "If I had an hour to solve a problem I'd spend 55 minutes thinking about the problem and 5 minutes thinking about solutions.",
+			"author": "Albert Einstein",
+			"image": "https://media.giphy.com/media/f1HSBidKJIOWY/giphy.gif",
+			"color": "160,219,142"
+		},
+		{
+			"id": 18,
+			"cite": "The dogmas of the quiet past are inadequate to the stormy present. The occasion is piled high with difficulty, and we must rise with the occasion. As our case is new, so we must think anew and act anew. We must disenthrall ourselves, and then we shall save our country.",
+			"author": "Abraham Lincoln",
+			"image": "https://media.giphy.com/media/1rQu2JtVL7revj4S8T/giphy.gif",
+			"color": "59,89,152"
+		},
+		{
+			"id": 19,
+			"cite": "Success is going from failure to failure without losing your enthusiasm.",
+			"author": "Winston Churchill",
+			"image": "https://media.giphy.com/media/fGOhABfWJjpaOZZhFn/giphy.gif",
+			"color": "51,51,51"
+		},
+		{
+			"id": 20,
+			"cite": "Simplicity is the ultimate sophistication.",
+			"author": "Leonardo da Vinci",
+			"image": "https://media.giphy.com/media/Xp98kEiD0SF9PEVPRl/giphy.gif",
+			"color": "0,128,128"
+		},
+		{
+			"id": 21,
+			"cite": "Power is not will, it is the phenomenon of physically making things happen.",
+			"author": "Madara Uchiha",
+			"image": "https://media.giphy.com/media/fBM0Os0cC66QAgVtmo/giphy.gif",
+			"color": "0,206,209"
+		}
+	]
+}
