@@ -8,15 +8,7 @@ $(document).ready(function () {
     twitter = $('.twitter--hover');
 
   function change(quote) {
-    var newarr = [],
-      current,
-      ran;
-
-
-    current = Math.floor(Math.random() * (quote.length));
-    newarr.push(current);
-
-    console.log(current);
+    var current = Math.floor(Math.random() * (quote.length));
 
     cite.find('cite').text(quote[current].cite);
     img.attr({
