@@ -21,7 +21,7 @@ $(document).ready(function () {
     name.css('color', 'rgb(' + quote[current].color + ')');
     btnColor.css('color', 'rgb(' + quote[current].color + ')');
     twitter.attr('href', `http://twitter.com/share?text=${quote[current].cite} -${quote[current].author}&via=@GerAlfonso&url=https%3A%2F%2Fgeralfonso.github.io/ranquote`);
-
+    shareOverrideOGMeta(quote[current].author, quote[current].cite, quote[current].image);
   }
   $.ajax("https://geralfonso.github.io/ranquote/server/db.json", {
     dataType: 'json',
