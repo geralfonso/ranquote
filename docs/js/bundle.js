@@ -24,7 +24,23 @@ $(document).ready(function () {
 
     $('.social_buttons').on('click', '.facebook--hover', function (e) {
       e.preventDefault();
-      shareOverrideOGMeta(quote[current].author, quote[current].cite, quote[current].image);
+      //shareOverrideOGMeta(quote[current].author, quote[current].cite, quote[current].image);
+      FB.ui({
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        action_properties: JSON.stringify({
+          object: {
+            'og:url': 'https://geralfonso.github.io/ranquote',
+            'og:title': quote[current].author,
+            'og:description': quote[current].cite,
+            'og:image:url': quote[current].image,
+            'og:image:type': 'image/gif'
+          },
+        })
+      }, function (response) {
+        // Debug response (optional)
+        console.log(response);
+      })
     });
 
   }

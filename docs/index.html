@@ -49,6 +49,7 @@
          js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1782836155359187&autoLogAppEvents=1";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
+       
        function shareOverrideOGMeta(title, description,gif) {     
          var ogTitle = `Random Quote Machine: ${title}`;
          var ogDes = `${description}`;
@@ -57,22 +58,23 @@
          console.log(title);
          console.log(description);
          console.log(gif);
-        FB.ui({
-          method: 'share_open_graph',
-          action_type: 'og.shares',
-          action_properties: JSON.stringify({
-            object: {
-              'og:url': 'https://geralfonso.github.io/ranquote',
-              'og:title': ogTitle,
-              'og:description': ogDes,
-              'og:image:url': ogImgUrl,
-              'og:image:type': 'image/gif'
-            },
-          })
-        }, function (response) {
-          // Debug response (optional)
-          console.log(response);
-        });
+         var obj = {};
+        //- FB.ui({
+        //-   method: 'share_open_graph',
+        //-   action_type: 'og.shares',
+        //-   action_properties: JSON.stringify({
+        //-     object: {
+        //-       'og:url': 'https://geralfonso.github.io/ranquote',
+        //-       'og:title': ogTitle,
+        //-       'og:description': ogDes,
+        //-       'og:image:url': ogImgUrl,
+        //-       'og:image:type': 'image/gif'
+        //-     },
+        //-   })
+        //- }, function (response) {
+        //-   // Debug response (optional)
+        //-   console.log(response);
+        //- });
       }
       //- (function(d, s, id) {
       //-   var js, fjs = d.getElementsByTagName(s)[0];
