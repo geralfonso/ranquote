@@ -19,8 +19,8 @@ script.
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
    function shareOverrideOGMeta(title, description,gif) {     
-     var ogTitle = `Random Quote Machine: ${ogTitle}`;
-     var ogDes = String(description);
+     var ogTitle = `Random Quote Machine: ${title}`;
+     var ogDes = `${description}`;
      var ogImgUrl = 'https://media.giphy.com/media/Xp98kEiD0SF9PEVPRl/giphy.gif';
      
      console.log(title);
