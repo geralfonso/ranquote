@@ -20,7 +20,7 @@ $(document).ready(function () {
     cite.css('background-color', 'rgb(' + quote[current].color + ')');
     name.css('color', 'rgb(' + quote[current].color + ')');
     btnColor.css('color', 'rgb(' + quote[current].color + ')');
-    twitter.attr('href', `http://twitter.com/share?text=${quote[current].cite} -${quote[current].author}&via=@GerAlfonso&url=https%3A%2F%2Fgeralfonso.github.io/ranquote`);
+    twitter.attr('href', `http://twitter.com/share?text=${quote[current].cite} -${quote[current].author}&via=GerAlfonso&url=https%3A%2F%2Fgeralfonso.github.io/ranquote`);
 
     $('.social_buttons').on('click', '.facebook--hover', function (e) {
       e.preventDefault();
