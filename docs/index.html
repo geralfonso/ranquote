@@ -49,8 +49,8 @@
          js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1782836155359187&autoLogAppEvents=1";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-       function shareOverrideOGMeta(title, description,gif) {
-         var ogTitle = String(title);
+       function shareOverrideOGMeta(title, description,gif) {     
+         var ogTitle = `Random Quote Machine: ${ogTitle}`;
          var ogDes = String(description);
          var ogImgUrl = 'https://media.giphy.com/media/Xp98kEiD0SF9PEVPRl/giphy.gif';
          
@@ -63,7 +63,7 @@
           action_properties: JSON.stringify({
             object: {
               'og:url': 'https://geralfonso.github.io/ranquote',
-              'og:title': 'Random Quote Machine :'+ ogTitle,
+              'og:title': ogTitle,
               'og:description': ogDes,
               'og:image:url': ogImgUrl,
               'og:image:type': 'image/gif'
