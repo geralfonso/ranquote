@@ -49,7 +49,10 @@
          js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1782836155359187&autoLogAppEvents=1";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-       function shareOverrideOGMeta(title, description) {
+       function shareOverrideOGMeta(title, description,gif) {
+         console.log(title);
+         console.log(description);
+         console.log(gif);
         FB.ui({
           method: 'share_open_graph',
           action_type: 'og.shares',
@@ -58,7 +61,7 @@
               'og:url': 'https://geralfonso.github.io/ranquote',
               'og:title': 'Random Quote Machine :'+ title,
               'og:description': description,
-              'og:image:url': 'https://media.giphy.com/media/2gxvLAo2N5CYU/giphy.gif',
+              'og:image:url': gif,
               'og:image:type': 'image/gif'
             },
           })
