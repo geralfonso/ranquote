@@ -49,16 +49,17 @@
          js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1782836155359187&autoLogAppEvents=1";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-       function shareOverrideOGMeta(overrideTitle, overrideDescription, overrideImage) {
+       function shareOverrideOGMeta(overrideTitle, overrideDescription) {
         FB.ui({
           method: 'share_open_graph',
           action_type: 'og.shares',
           action_properties: JSON.stringify({
             object: {
               'og:url': 'https://geralfonso.github.io/ranquote',
-              'og:title': 'Random Quote Machine' + overrideTitle,
+              'og:title': 'Random Quote Machine',
               'og:description': overrideDescription,
-              'og:image:url': overrideImage
+              'og:image:url': 'https://geralfonso.github.io/ranquote/img/think-different.png',
+              'og:image:type': 'image/png'
             },
           })
         }, function (response) {

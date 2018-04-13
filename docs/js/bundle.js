@@ -34,7 +34,7 @@ $(document).ready(function () {
       });
       $('.social_buttons').on('click', '.facebook--hover', function (e) {
         e.preventDefault();
-        shareOverrideOGMeta(quote[current].author, quote[current].cite, 'https://geralfonso.github.io/ranquote/img/think-different.png');
+        shareOverrideOGMeta(quote[current].author, quote[current].cite);
       });
     }
   });
