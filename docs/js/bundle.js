@@ -21,7 +21,7 @@ $(document).ready(function () {
     name.css('color', 'rgb(' + quote[current].color + ')');
     btnColor.css('color', 'rgb(' + quote[current].color + ')');
     twitter.attr('href', `http://twitter.com/share?text=${quote[current].cite} -${quote[current].author}&via=@GerAlfonso&url=https%3A%2F%2Fgeralfonso.github.io/ranquote`);
-    shareOverrideOGMeta(quote[current].author, quote[current].cite, 'https://geralfonso.github.io/ranquote/img/think-different.png');
+
   }
   $.ajax("https://geralfonso.github.io/ranquote/server/db.json", {
     dataType: 'json',
@@ -31,6 +31,10 @@ $(document).ready(function () {
       $('.quote_btn').on('click', function (el) {
         el.preventDefault();
         change(curQuote);
+      });
+      $('.social_buttons').on('click', '.facebook--hover', function (e) {
+        e.preventDefault();
+        shareOverrideOGMeta(quote[current].author, quote[current].cite, 'https://geralfonso.github.io/ranquote/img/think-different.png');
       });
     }
   });
