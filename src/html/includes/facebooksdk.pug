@@ -19,6 +19,10 @@ script.
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
    function shareOverrideOGMeta(title, description,gif) {
+     var ogTitle = String(title);
+     var ogDes = String(description);
+     var ogImgUrl = String(gif);
+     
      console.log(title);
      console.log(description);
      console.log(gif);
@@ -28,9 +32,9 @@ script.
       action_properties: JSON.stringify({
         object: {
           'og:url': 'https://geralfonso.github.io/ranquote',
-          'og:title': 'Random Quote Machine :'+ title,
-          'og:description': description,
-          'og:image:url': gif,
+          'og:title': 'Random Quote Machine :'+ ogTitle,
+          'og:description': ogDes,
+          'og:image:url': ogImgUrl,
           'og:image:type': 'image/gif'
         },
       })
