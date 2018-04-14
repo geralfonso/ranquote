@@ -8,7 +8,8 @@ const gulp = require('gulp'),
   concat = require('gulp-concat'),
   pump = require('pump'),
   uglify = require('gulp-uglify'),
-  pug = require('gulp-pug');
+  pug = require('gulp-pug'),
+  babel = require("gulp-babel");
 //sassdoc = require('sassdoc'),
 //rename = require('gulp-rename'),
 //converter = require('sass-convert');
@@ -76,7 +77,10 @@ gulp.task('sass', () => {
 gulp.task('compress', (cb) => {
   pump([
       gulp.src(['./src/js/*.js']),
+      sourcemaps.init(),
+      babel(),
       concat('bundle.js'),
+      sourcemaps.write("."),
       gulp.dest('./docs/js')
     ],
     cb

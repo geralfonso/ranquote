@@ -1,5 +1,7 @@
-$(document).ready(function () {
-  var cite = $('.quote_cite'),
+"use strict"
+
+$(document).ready(() => {
+  const cite = $('.quote_cite'),
     img = $('.quote_img img'),
     author = $('.quote_autor, .title_heading'),
     name = $('.title_heading'),
@@ -8,7 +10,7 @@ $(document).ready(function () {
     twitter = $('.twitter--hover');
 
   function change(quote) {
-    var current = Math.floor(Math.random() * (quote.length));
+    const current = Math.floor(Math.random() * (quote.length));
 
     cite.find('cite').text(quote[current].cite);
     img.attr({
@@ -22,7 +24,7 @@ $(document).ready(function () {
     btnColor.css('color', 'rgb(' + quote[current].color + ')');
     twitter.attr('href', `http://twitter.com/share?text=${quote[current].cite} -${quote[current].author}&via=GerAlfonso&url=https%3A%2F%2Fgeralfonso.github.io/ranquote`);
 
-    $('.social_buttons').on('click', '.facebook--hover', function (e) {
+    $('.social_buttons').on('click', '.facebook--hover', (e) => {
       e.preventDefault();
       FB.ui({
         method: 'share_open_graph',
@@ -36,16 +38,16 @@ $(document).ready(function () {
             'og:image:type': 'image/gif'
           },
         })
-      }, function (response) {});
+      }, (response) => {});
     });
 
   }
   $.ajax("https://geralfonso.github.io/ranquote/server/db.json", {
     dataType: 'json',
-    success: function (json) {
-      var curQuote = json.quotes;
+    success: (json) => {
+      let curQuote = json.quotes;
       change(curQuote);
-      $('.quote_btn').on('click', function (el) {
+      $('.quote_btn').on('click', (el) => {
         el.preventDefault();
         change(curQuote);
       });
