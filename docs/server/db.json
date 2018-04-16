@@ -145,6 +145,13 @@
 			"author": "Madara Uchiha",
 			"image": "https://media.giphy.com/media/fBM0Os0cC66QAgVtmo/giphy.gif",
 			"color": "0,206,209"
+		},
+		{
+			"id": 22,
+			"cite": "If you can't explain it simply, you don't understand it well enough.",
+			"author": "Albert Einstein",
+			"image": "https://media.giphy.com/media/xUA7aYvNQkIfoT7zLq/giphy.gif",
+			"color": "0,153,204"
 		}
 	]
 }
